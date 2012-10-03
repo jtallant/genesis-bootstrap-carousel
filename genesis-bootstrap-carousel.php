@@ -33,7 +33,7 @@ function genesis_bootstrap_carousel_init() {
 	add_action( 'wp_enqueue_scripts', 'genesis_bootstrap_carousel_scripts' );
 	add_action( 'wp_print_styles', 'genesis_bootstrap_carousel_styles' );
 	add_action( 'wp_head', 'genesis_bootstrap_carousel_head', 1 );
-	add_action( 'wp_footer', 'genesis_bootstrap_carousel_params' );
+	add_action( 'wp_footer', 'genesis_bootstrap_carousel_params', 999 );
 	add_action( 'widgets_init', 'genesis_bootstrap_carousel_register' );
 
 	if ( 1 == genesis_get_bootstrap_carousel_option( 'html5_doctype' ) ) {
@@ -108,7 +108,7 @@ function genesis_bootstrap_carousel_scripts() {
 	if ( 1 == genesis_get_bootstrap_carousel_option( 'disable_js') )
 		return;
 
-	wp_enqueue_script('jquery');
+	wp_enqueue_script( 'jquery' );
 	wp_enqueue_script( 'bootstrap-carousel', plugins_url('js/carousel.min.js', __FILE__), array( 'jquery' ), GENESIS_BOOTSTRAP_CAROUSEL_VERSION, TRUE );
 
 }
@@ -180,8 +180,6 @@ function genesis_bootstrap_carousel_params() {
 			interval: ' . $interval . '
 	    });
 	});';
-
-	$output = str_replace( array( "\n", "\t", "\r" ), '', $output );
 
 	echo '<script type="text/javascript">' . $output . '</script>';
 }
