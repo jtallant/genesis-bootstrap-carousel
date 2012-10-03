@@ -12,15 +12,15 @@ Genesis Bootstrap Carousel (GBC) allows you to create a simple responsive image 
 
 GBC is based off of the Genesis Responsive Slider and uses a lot of the same code. The main difference is that the Genesis Bootstrap Carousel uses the Carousel
 
-jquery plugin created by the open source Twitter Bootstrap Project. The carousel.js in this plugin is roughly 1/4 the size of the jquery flexsider.js used by
+jquery plugin created by the open source Twitter Bootstrap Project. The carousel.js in this plugin is roughly 1/4 the size of the jquery flexslider.js used by
 
 the Genesis Responsive Slider. The CSS in this plugin is about half the size of the Genesis Responsive Slider plugin. Genesis Bootstrap Carousel also includes
 
-options to easily disable the CSS and JS of the plugin, allowing you to move scripts or styles into a combined file inside your theme. GBC also uses CSS for the 
+options to easily disable the CSS and JS of the plugin, allowing you to move scripts or styles into a combined file inside your theme. GBC also uses CSS for the
 
 next/previous arrows, avoiding an HTTP request and allowing easy customization via CSS.
 
-It includes options for the maximum dimensions of your slideshow, allows you to choose to display posts, pages, custom post types, what category to pull from, and even the 
+It includes options for the maximum dimensions of your slideshow, allows you to choose to display posts, pages, custom post types, what category to pull from, and even the
 
 specific post IDs of the posts you want to display. It includes next/previous arrows that can be turned on or off. Finally, you can place the carousel into a widget area.
 
