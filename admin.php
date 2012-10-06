@@ -33,6 +33,7 @@ function genesis_bootstrap_carousel_defaults() {
 		'location_horizontal'            => 'left',
 		'carousel_hide_mobile'           => 1,
 		'html5_docytpe'                  => 0,
+		'css_js_pageids'                 => '',
 		'disable_css'                    => 0,
 		'disable_js'                     => 0
 	);
@@ -338,6 +339,14 @@ function genesis_bootstrap_carousel_options_box() {
 
 		<p>
 			<input type="checkbox" name="<?php echo GENESIS_BOOTSTRAP_CAROUSEL_SETTINGS_FIELD; ?>[html5_doctype]" id="<?php echo GENESIS_BOOTSTRAP_CAROUSEL_SETTINGS_FIELD; ?>[html5_doctype]" value="1" <?php checked(1, genesis_get_bootstrap_carousel_option('html5_doctype')); ?> /> <label for="<?php echo GENESIS_BOOTSTRAP_CAROUSEL_SETTINGS_FIELD; ?>[html5_doctype]"><?php _e( 'Use html5 doctype? ( Bootstrap says it is required but it should work without it )', 'genesis-bootstrap-carousel' ); ?></label>
+		</p>
+
+		<p>
+			<label for="<?php echo GENESIS_BOOTSTRAP_CAROUSEL_SETTINGS_FIELD; ?>[css_js_pageids]"><?php _e( "Load carousel CSS and JS only on specific page ID(s)<br />Single page ID or comma separated list. Use -1 as the ID for the home page", 'genesis-bootstrap-carousel' ); ?>:</label>
+		</p>
+
+		<p>
+			<input type="text" id="<?php echo GENESIS_BOOTSTRAP_CAROUSEL_SETTINGS_FIELD; ?>[css_js_pageids]" name="<?php echo GENESIS_BOOTSTRAP_CAROUSEL_SETTINGS_FIELD; ?>[css_js_pageids]" value="<?php echo genesis_get_bootstrap_carousel_option( 'css_js_pageids' ); ?>" style="width: 60%;" />
 		</p>
 
 		<p>

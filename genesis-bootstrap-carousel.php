@@ -77,6 +77,7 @@ function genesis_bootstrap_carousel_sanitization() {
 			'posts_num',
 			'posts_offset',
 			'orderby',
+			'css_js_pageids',
 			'carousel_interval',
 			'carousel_height',
 			'carousel_width',
@@ -105,7 +106,7 @@ function html5_doctype() {
  */
 function genesis_bootstrap_carousel_scripts() {
 
-	if ( 1 == genesis_get_bootstrap_carousel_option( 'disable_js') )
+	if ( 1 == genesis_get_bootstrap_carousel_option( 'disable_js') || false == gbc_is_included_page_id() )
 		return;
 
 	wp_enqueue_script( 'jquery' );
@@ -118,7 +119,7 @@ function genesis_bootstrap_carousel_scripts() {
  */
 function genesis_bootstrap_carousel_styles() {
 
-	if ( 1 == genesis_get_bootstrap_carousel_option( 'disable_css' ) )
+	if ( 1 == genesis_get_bootstrap_carousel_option( 'disable_css') || false == gbc_is_included_page_id() )
 		return;
 
 	/** standard carousel styles */
@@ -133,7 +134,7 @@ function genesis_bootstrap_carousel_styles() {
  */
 function genesis_bootstrap_carousel_head() {
 
-		if ( 1 == genesis_get_bootstrap_carousel_option( 'disable_css' ) )
+		if ( 1 == genesis_get_bootstrap_carousel_option( 'disable_css' ) || false == gbc_is_included_page_id() )
 			return;
 
 		$width = ( int ) genesis_get_bootstrap_carousel_option( 'carousel_width' );
@@ -169,7 +170,7 @@ function genesis_bootstrap_carousel_head() {
  */
 function genesis_bootstrap_carousel_params() {
 
-	if ( 1 == genesis_get_bootstrap_carousel_option( 'disable_js' ) )
+	if ( 1 == genesis_get_bootstrap_carousel_option( 'disable_js' ) || false == gbc_is_included_page_id() )
 		return;
 
 	$interval = ( int ) genesis_get_bootstrap_carousel_option( 'carousel_interval' );
@@ -417,4 +418,36 @@ function genesis_bootstrap_carousel_option( $key ) {
 		return false;
 
 	echo genesis_get_bootstrap_carousel_option( $key );
+}
+
+/**
+ * Returns an array of ids to load scripts and styles on
+ */
+function genesis_bootstrap_carousel_pageids() {
+	$page_ids = genesis_get_bootstrap_carousel_option('css_js_pageids');
+	$page_ids = preg_replace('/\s/','',$page_ids);
+	$page_ids = explode(',', $page_ids);
+	return $page_ids;
+}
+
+function gbc_is_included_page_id() {
+
+	if ( '' == genesis_get_bootstrap_carousel_option('css_js_pageids') ) {
+		return 1;
+	}
+
+	global $wp_query;
+	$page_id = $wp_query->get_queried_object_id();
+
+	$ids_to_include = genesis_bootstrap_carousel_pageids();
+
+	if ( is_home() && in_array(-1, $ids_to_include) ) {
+		return 1;
+	}
+
+	if ( in_array($page_id, $ids_to_include) ) {
+		return 1;
+	}
+
+	return false;
 }
