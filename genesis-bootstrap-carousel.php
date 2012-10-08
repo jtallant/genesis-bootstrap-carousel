@@ -429,6 +429,11 @@ function genesis_bootstrap_carousel_pageids() {
 	return $page_ids;
 }
 
+/**
+ * Determines if the current page/post id should load the plugin css/js
+ *
+ * @return boolean
+ */
 function gbc_is_included_page_id() {
 
 	if ( '' == genesis_get_bootstrap_carousel_option('css_js_pageids') ) {
