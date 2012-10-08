@@ -6,7 +6,7 @@
 /**
  * Return the defaults array
  *
- * @since 0.9
+ * @since 0.1.0
  */
 function genesis_bootstrap_carousel_defaults() {
 
@@ -222,7 +222,7 @@ function gbc_taxonomy_options() {
 /**
  * This function generates the form code to be used in the metaboxes
  *
- * @since 0.9
+ * @since 0.1.0
  */
 function genesis_bootstrap_carousel_options_box() {
 ?>
