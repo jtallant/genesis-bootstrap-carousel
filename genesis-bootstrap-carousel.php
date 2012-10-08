@@ -26,9 +26,8 @@ function genesis_bootstrap_carousel_init() {
 		return;
 
 	// translation support
-	// TODO: Generate translation files
-	// load_plugin_textdomain( 'genesis-bootstrap-carousel', false, '/genesis-bootstrap-carousel/languages/' );
-	
+	load_plugin_textdomain( 'genesis-bootstrap-carousel', false, dirname( plugin_basename( __FILE__ ) ) . '/languages/' );
+
 	/** hook all frontend slider functions here to ensure Genesis is active **/
 	add_action( 'wp_enqueue_scripts', 'genesis_bootstrap_carousel_scripts' );
 	add_action( 'wp_print_styles', 'genesis_bootstrap_carousel_styles' );
@@ -385,7 +384,7 @@ class Genesis_Bootstrap_Carousel_Widget extends WP_Widget {
 		$title = $instance['title'];
 
 		echo '<p><label for="', $this->get_field_id( 'title' ), '">'; _e( 'Title:', 'genesis-bootstrap-carousel' ); echo '<input class="widefat" id="', $this->get_field_id( 'title' ), '" name="', $this->get_field_name( 'title' ), '" type="text" value="', esc_attr( $title ), '" /></label></p>';
-		printf( __( '<p>To configure slider options, please go to the <a href="%s">Carousel Settings</a> page.</p>', 'genesis-bootstrap-carousel' ), menu_page_url( 'genesis_bootstrap_carousel', 0 ) );
+		printf( '<p>' . __( 'To configure slider options, please go to the <a href="%s">Carousel Settings</a> page.', 'genesis-bootstrap-carousel' ) . '</p>', menu_page_url( 'genesis_bootstrap_carousel', 0 ) );
 	}
 
 	function update( $new_instance, $old_instance ) {
