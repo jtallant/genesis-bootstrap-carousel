@@ -69,5 +69,8 @@ function my_child_theme_bootstrap_carousel_defaults( $defaults ) {
 
 == Changelog ==
 
+= 0.1.1 =
+* Add translation support
+
 = 0.1.0 =
 * Beta Release
