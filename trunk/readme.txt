@@ -8,6 +8,8 @@ This plugin allows you to create a simple responsive image carousel that display
 
 == Description ==
 
+Note: This plugin only supports Genesis child themes. If you don't know what that is, don't download this plugin.
+
 Genesis Bootstrap Carousel (GBC) allows you to create a simple responsive image carousel that displays the featured image, along with the title and excerpt from each post.
 GBC is based off of the Genesis Responsive Slider and uses a lot of the same code. The main difference is that the Genesis Bootstrap Carousel uses the Carousel
 jquery plugin created by the open source Twitter Bootstrap Project. The carousel.js in this plugin is roughly 1/4 the size of the jquery flexslider.js used by
@@ -18,8 +20,6 @@ next/previous arrows, avoiding an HTTP request and allowing easy customization v
 It includes options for the maximum dimensions of your slideshow, allows you to choose to display posts, pages, custom post types, what category to pull from, and even the
 specific post IDs of the posts you want to display. It includes next/previous arrows that can be turned on or off. Finally, you can place the carousel into a widget area.
 The image carousel is also responsive and will automatically adjust for the screen it is being displayed on.
-
-Note: This plugin only supports Genesis child themes.
 
 == Installation ==
 
@@ -69,8 +69,8 @@ function my_child_theme_bootstrap_carousel_defaults( $defaults ) {
 
 == Changelog ==
 
-= 0.1.1 =
-* Add translation support
-
 = 0.1.0 =
 * Beta Release
+
+= 0.1.1 =
+* Add translation support
