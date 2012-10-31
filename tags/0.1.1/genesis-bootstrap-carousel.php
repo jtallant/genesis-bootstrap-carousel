@@ -117,6 +117,7 @@ function html5_doctype() {
 
 	$doctype = '<!DOCTYPE html>
 	<html dir="' . get_bloginfo("text_direction") . '" lang="' . get_bloginfo("language") . '">
+	<head>
 	<meta http-equiv="Content-Type" content="' . get_bloginfo( "html_type" ) . ' charset=' . get_bloginfo( "charset" ) . '" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	';
