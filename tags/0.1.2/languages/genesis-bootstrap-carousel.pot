@@ -1,0 +1,294 @@
+# Copyright (C) 2012 Genesis Bootstrap Carousel
+# This file is distributed under the same license as the Genesis Bootstrap Carousel package.
+msgid ""
+msgstr ""
+"Project-Id-Version: Genesis Bootstrap Carousel 0.1.1\n"
+"Report-Msgid-Bugs-To: http://wordpress.org/tag/genesis-bootstrap-carousel\n"
+"POT-Creation-Date: 2012-10-27 04:00:34+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2012-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+
+#: admin.php:77
+msgid "Settings reset."
+msgstr ""
+
+#: admin.php:79
+msgid "Settings saved."
+msgstr ""
+
+#: admin.php:92
+msgid "Carousel Settings"
+msgstr ""
+
+#: admin.php:114
+msgid "Genesis Bootstrap Carousel Settings"
+msgstr ""
+
+#: admin.php:152
+msgid "Genesis - Bootstrap Carousel"
+msgstr ""
+
+#: admin.php:153 admin.php:164
+msgid "Save Settings"
+msgstr ""
+
+#: admin.php:154 admin.php:165
+msgid "Reset Settings"
+msgstr ""
+
+#: admin.php:154
+msgid "Are you sure you want to reset?"
+msgstr ""
+
+#: admin.php:232
+msgid "Type of Content"
+msgstr ""
+
+#: admin.php:235
+msgid "Select a post type (post, page, or custom post type)"
+msgstr ""
+
+#: admin.php:248
+msgid "By Taxonomy and Terms"
+msgstr ""
+
+#: admin.php:248
+msgid "Choose a term to determine what slides to include"
+msgstr ""
+
+#: admin.php:252
+msgid "All Taxonomies and Terms"
+msgstr ""
+
+#: admin.php:259
+msgid "Exclude by Taxonomy ID"
+msgstr ""
+
+#: admin.php:262
+msgid ""
+"List which category, tag or other taxonomy IDs to exclude. (1,2,3,4 for "
+"example)"
+msgstr ""
+
+#: admin.php:272
+msgid "Include or Exclude by %s ID"
+msgstr ""
+
+#: admin.php:275
+msgid ""
+"Choose the include / exclude slides using their post / page ID in a comma-"
+"separated list. (1,2,3,4 for example)"
+msgstr ""
+
+#: admin.php:279
+msgid "Select"
+msgstr ""
+
+#: admin.php:280
+msgid "Include"
+msgstr ""
+
+#: admin.php:281
+msgid "Exclude"
+msgstr ""
+
+#: admin.php:286
+msgid "List which"
+msgstr ""
+
+#: admin.php:286 admin.php:306
+msgid "ID"
+msgstr ""
+
+#: admin.php:286
+msgid "to include / exclude. (1,2,3,4 for example)"
+msgstr ""
+
+#: admin.php:292
+msgid "Number of Slides to Show"
+msgstr ""
+
+#: admin.php:297
+msgid "Number of Posts to Offset"
+msgstr ""
+
+#: admin.php:302
+msgid "Order By"
+msgstr ""
+
+#: admin.php:304
+msgid "Date"
+msgstr ""
+
+#: admin.php:305
+msgid "Title"
+msgstr ""
+
+#: admin.php:307
+msgid "Random"
+msgstr ""
+
+#: admin.php:315
+msgid "Transition Settings"
+msgstr ""
+
+#: admin.php:318
+msgid "Time Between Slides (in milliseconds)"
+msgstr ""
+
+#: admin.php:324
+msgid "Display Settings"
+msgstr ""
+
+#: admin.php:327
+msgid "Maximum Carousel Width (in pixels)"
+msgstr ""
+
+#: admin.php:332
+msgid "Maximum Carousel Height (in pixels)"
+msgstr ""
+
+#: admin.php:337
+msgid "Display Next / Previous Arrows in Carousel?"
+msgstr ""
+
+#: admin.php:341
+msgid ""
+"Use html5 doctype? ( Bootstrap says it is required but it should work "
+"without it )"
+msgstr ""
+
+#: admin.php:345
+msgid ""
+"Load carousel CSS and JS only on specific page ID(s)<br />Single page ID or "
+"comma separated list. Use -1 as the ID for the home page"
+msgstr ""
+
+#: admin.php:353
+msgid "Disable plugin JavaScript and load your own?"
+msgstr ""
+
+#: admin.php:357
+msgid "Disable plugin CSS and load your own?"
+msgstr ""
+
+#: admin.php:362
+msgid "Content Settings"
+msgstr ""
+
+#: admin.php:365
+msgid "Do not link Carousel image to Post/Page."
+msgstr ""
+
+#: admin.php:369
+msgid "Display Post/Page Title in Carousel Caption?"
+msgstr ""
+
+#: admin.php:372
+msgid "Display Content in Carousel Caption?"
+msgstr ""
+
+#: admin.php:376
+msgid "Hide Carousel Caption on Small Screen Sizes"
+msgstr ""
+
+#: admin.php:382
+msgid "Select one of the following:"
+msgstr ""
+
+#: admin.php:384
+msgid "Display post content inside carousel capton"
+msgstr ""
+
+#: admin.php:385
+msgid "Display post excerpts inside carousel caption"
+msgstr ""
+
+#: admin.php:390
+msgid "More Text (if applicable)"
+msgstr ""
+
+#: admin.php:395
+msgid "Limit content to"
+msgstr ""
+
+#: admin.php:397
+msgid "characters"
+msgstr ""
+
+#: admin.php:400
+msgid ""
+"Using this option will limit the text and strip all formatting from the text "
+"displayed. To use this option, choose \"Display post content inside carousel "
+"caption\" in the select box above."
+msgstr ""
+
+#: admin.php:404
+msgid "Carousel Caption Width (in percentage)"
+msgstr ""
+
+#: admin.php:409
+msgid "Carousel Caption Location (vertical)"
+msgstr ""
+
+#: admin.php:411
+msgid "Top"
+msgstr ""
+
+#: admin.php:412
+msgid "Bottom"
+msgstr ""
+
+#: admin.php:417
+msgid "Carousel Caption Location (horizontal)"
+msgstr ""
+
+#: admin.php:419
+msgid "Left"
+msgstr ""
+
+#: admin.php:420
+msgid "Right"
+msgstr ""
+
+#: admin.php:431
+msgid "Save Changes"
+msgstr ""
+
+#: genesis-bootstrap-carousel.php:241
+msgid "Displays a carousel inside a widget area"
+msgstr ""
+
+#: genesis-bootstrap-carousel.php:410
+msgid "Title:"
+msgstr ""
+
+#: genesis-bootstrap-carousel.php:411
+msgid ""
+"To configure slider options, please go to the <a href=\"%s\">Carousel "
+"Settings</a> page."
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+msgid "Genesis Bootstrap Carousel"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/jtallant/genesis-bootstrap-carousel"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "A responsive image carousel for Genesis."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "jtallant"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://justintallant.com"
+msgstr ""

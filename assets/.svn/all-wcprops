@@ -1,7 +1,7 @@
 K 25
 svn:wc:ra_dav:version-url
 V 50
-/!svn/ver/609849/genesis-bootstrap-carousel/assets
+/!svn/ver/670869/genesis-bootstrap-carousel/assets
 END
 screenshot-2.png
 K 25
@@ -14,6 +14,12 @@ K 25
 svn:wc:ra_dav:version-url
 V 67
 /!svn/ver/609849/genesis-bootstrap-carousel/assets/screenshot-3.png
+END
+banner-772x250.png
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/!svn/ver/670869/genesis-bootstrap-carousel/assets/banner-772x250.png
 END
 screenshot-1.png
 K 25
