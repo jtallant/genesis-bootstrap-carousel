@@ -1,8 +1,8 @@
-=== Genesis Bootstrap Carousel ===
-Tags: slider, slideshow, responsive, genesis, genesiswp, studiopress, carousel, bootstrap, twitter bootstrap
-Requires at least: 3.2
-Tested up to: 3.5.1
-Stable tag: 0.1.2
+# Genesis Bootstrap Carousel
+Tags: slider, slideshow, responsive, genesis, genesiswp, studiopress, carousel,    bootstrap, twitter bootstrap    
+Requires at least: 3.2    
+Tested up to: 3.5.1    
+Stable tag: 0.1.2    
 
 This plugin allows you to create a simple responsive image carousel that displays the featured image, along with the title and excerpt from each post.
 
@@ -41,7 +41,8 @@ You can get information on how the carousel.js works by visiting the [Carousel S
 
 To adjust the carousel defaults for a child theme use a filter simiar to the following:
 
-`add_filter( 'bootstrap_carousel_settings_defaults', 'my_child_theme_bootstrap_carousel_defaults' );
+```
+add_filter( 'bootstrap_carousel_settings_defaults', 'my_child_theme_bootstrap_carousel_defaults' );
 
 function my_child_theme_bootstrap_carousel_defaults( $defaults ) {
 	$defaults = array(
@@ -72,7 +73,7 @@ function my_child_theme_bootstrap_carousel_defaults( $defaults ) {
 	);
 	return $defaults;
 }
-`
+```
 
 == Screenshots ==
 
